@@ -13,7 +13,7 @@ class MultiTaskBGE(nn.Module):
     def __init__(self, model_dir: str, dropout: float = 0.1):
         super().__init__()
         self.backbone = AutoModel.from_pretrained(model_dir)   # sin trust_remote_code
-        hidden = self.backbone.config.hidden_size   # 1024 para BGE-M3
+        hidden = self.backbone.config.hidden_size   # 1024 para BGE-M
 
         self.dropout = nn.Dropout(dropout)
         self.head_t1 = nn.Linear(hidden, 2)
