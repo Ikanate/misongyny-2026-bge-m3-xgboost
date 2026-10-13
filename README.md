@@ -9,9 +9,9 @@ Solución para la detección de misoginia en letras de canciones en español.
 > por completo.
 
 ## Enfoque
-- Backbone BGE-M3 con cabezas para cada task
+- Entrenar un Backbone BGE-M3 diferente para cada task
 - XGBoost sobre embeddings congelados, con Optuna
-- Glosas de letras generadas con un LLM como features auxiliares
+- Glosas de letras generadas con un LLM (Gemma4) como features auxiliares
 
 ## Estructura
 ...
