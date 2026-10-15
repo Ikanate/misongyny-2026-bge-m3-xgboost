@@ -5,7 +5,7 @@ Solución para la detección de misoginia en letras de canciones en español.
 **Resultados:** 2do lugar en Task 1 y Task 3.
 
 > Nota: no se redactó el working-notes paper de este envío. Este repositorio
-> se reconstruyó a posteriori; algunos experimentos pueden no estar documentados
+> se reconstruyó a posteriori.
 > por completo.
 
 ## Enfoque
