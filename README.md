@@ -29,8 +29,8 @@ Para confirmar y consultar los detalles de los resultados, puedes revisar el pap
 #### Validación local (Task 1, split 70/30 en datos de entrenamiento)
 | Modelo / Enfoque | F1-Score |
 | :--- | :---: |
-| BGE-M3 | 0.8172 |
-| BGE-M3 + G4 | 0.8389 |
+| BG3 | 0.8172 |
+| BG3 + G4 | 0.8389 |
 
 ## Cómo reproducir
 ...
