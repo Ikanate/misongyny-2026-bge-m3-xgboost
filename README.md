@@ -4,6 +4,14 @@ Solución para la detección de misoginia en letras de canciones en español.
 
 **Resultados:** 2do lugar en Task 1 y Task 3.
 
+Para confirmar y consultar los detalles de los resultados, puedes revisar el paper del equipo IReL_IIT(BHU) [paper](https://ceur-ws.org/Vol-4273/MiSonGyny2026_paper8.pdf).
+
+| Tarea | F1-Score | Rank |
+| :--- | :---: | :---: |
+| Task 1 | 0.8712 | 2 |
+| Task 2 | 0.6813 | 5 |
+| Task 3 | 0.8109 | 2 |
+
 > Nota: no se redactó el working-notes paper de este envío. Este repositorio
 > se reconstruyó a posteriori.
 > por completo.
@@ -17,3 +25,5 @@ Solución para la detección de misoginia en letras de canciones en español.
 ...
 ## Cómo reproducir
 ...
+
+## 
