@@ -16,13 +16,22 @@ Para confirmar y consultar los detalles de los resultados, puedes revisar el pap
 > se reconstruyó a posteriori.
 
 ## Enfoque
-- Glosas de letras generadas con un LLM (Gemma4) como features auxiliares
-- Entrenar un Backbone BGE-M3 diferente para cada task
-- XGBoost sobre embeddings congelados, con Optuna
+- Glosas de letras generadas con un LLM (Gemma4) como features auxiliares [G4]
+- Entrenar un Backbone BGE-M3 diferente para cada task [BG3]
+- XGBoost sobre embeddings congelados, con Optuna [XG]
 
 
 ## Estructura
 ...
+
+## Experimentos ablativos
+
+#### Validación local (Task 1, split 70/30 en datos de entrenamiento)
+| Modelo / Enfoque | F1-Score |
+| :--- | :---: |
+| BGE-M3 | 0.8172 |
+| BGE-M3 + G4 | 0.8389 |
+
 ## Cómo reproducir
 ...
 
