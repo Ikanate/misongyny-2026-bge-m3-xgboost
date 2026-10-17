@@ -26,6 +26,14 @@ Para confirmar y consultar los detalles de los resultados, puedes revisar el pap
 
 ## Experimentos ablativos
 
+**Hiperparámetros:**
+- `BATCH_SIZE`: 4
+- `EPOCHS`: 10
+- `LR_BACKBONE`: 5e-6
+- `LR_HEADS`: 1e-3
+- `WEIGHT_DECAY`: 0.1
+- `WARMUP_RATIO`: 0.1
+
 #### Validación local (Task 1, split 70/30 en datos de entrenamiento)
 | Modelo / Enfoque | F1-Score |
 | :--- | :---: |
