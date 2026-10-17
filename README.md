@@ -14,12 +14,12 @@ Para confirmar y consultar los detalles de los resultados, puedes revisar el pap
 
 > Nota: no se redactó el working-notes paper de este envío. Este repositorio
 > se reconstruyó a posteriori.
-> por completo.
 
 ## Enfoque
+- Glosas de letras generadas con un LLM (Gemma4) como features auxiliares
 - Entrenar un Backbone BGE-M3 diferente para cada task
 - XGBoost sobre embeddings congelados, con Optuna
-- Glosas de letras generadas con un LLM (Gemma4) como features auxiliares
+
 
 ## Estructura
 ...
