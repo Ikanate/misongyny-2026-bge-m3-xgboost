@@ -1,0 +1,34 @@
+# ==========================================
+# PyTorch Lightning & Checkpoints
+# ==========================================
+# Extensiones de checkpoints de PyTorch y Lightning
+*.ckpt
+*.pt
+*.pth
+
+# Carpetas por defecto de logs y checkpoints de PyTorch Lightning
+lightning_logs/
+checkpoints/
+
+# (Opcional) Si usas loggers integrados como WandB o TensorBoard
+wandb/
+runs/
+tb_logs/
+
+# ==========================================
+# Archivos Pickle (en cualquier carpeta)
+# ==========================================
+*.pkl
+*.pickle
+*.p
+
+# ==========================================
+# Básicos de Python (Recomendado)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+.ipynb_checkpoints/

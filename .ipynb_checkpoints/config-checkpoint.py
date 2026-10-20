@@ -14,15 +14,15 @@ script principal.
 #/home/andreoseo/Documents/MiSongGyny2026/DATA/test/w_glossa/resultado_public_test.csv
 class paths:
     #CSV_PATH     = '/home/andreoseo/Documents/MiSongGyny2026/src/ollama_modules/resultado.csv' #'../../DATA/dataset_limpio.csv'#
-    CSV_PATH = "/home/andreoseo/Documents/MiSongGyny2026/src/ollama_modules/resultado_manual_gloss_clean.csv"
-    AUG_CSV_PATH = '../DATA/train_pahse_misongyny_26_train_df_aug.csv'
+    CSV_PATH         = "/home/andreoseo/Documents/MiSongGyny2026/src/ollama_modules/resultado_manual_gloss_clean.csv"
+    AUG_CSV_PATH     = '../DATA/train_pahse_misongyny_26_train_df_aug.csv'
 
     # Ruta al modelo descargado localmente 
-    MODEL_DIR    = '/home/andreoseo/Documents/MiSongGyny2026/modelos/bge-m3-base'
+    MODEL_DIR        = '/home/andreoseo/Documents/MiSongGyny2026/modelos/bge-m3-base'
 
-    SAVE_DIR     = '/home/andreoseo/Documents/MiSongGyny2026/models/checkpoints_true/borrable_solo_fast' #bg3_deduplicatedn_t1
-
-    MODEL_PREFIX  = ''
+    SAVE_DIR         = './checkpoints/' #bg3_deduplicatedn_t1
+    SAVE_DIR_XGBOOST = './checkpoints/xgboost/'
+    MODEL_PREFIX     = ''
 
 # ── Tokenización ───────────────────────────────────────────────────────────
 class tokenization:
@@ -42,8 +42,8 @@ class train:
     WARMUP_RATIO = 0.1
 
     # ── Pesos de la loss combinada 
-    LOSS_W1 = 0.0   # Task 1 – misoginia binaria
-    LOSS_W2 = 1.0   # Task 2 – tipo multilabel
+    LOSS_W1 = 1.0   # Task 1 – misoginia binaria
+    LOSS_W2 = 0.0   # Task 2 – tipo multilabel
     LOSS_W3 = 0.0   # Task 3 – estereotipo binario
 
 
@@ -54,8 +54,13 @@ class train:
     TEST_SIZE     = 0.3
     SEED = 42
     
-    BEST_MODEL_METRIC = 'f1_t2'
+    BEST_MODEL_METRIC = 'f1_t1'
     GRADIENT_CHECKPOINTING = False
+
+    PATIENCE = 3
+    MIN_DELTA = 0.001
+
+    
 
 # ── Columnas multilabel (Task 2) ───────────────────────────────────────────
 class columns:
@@ -65,7 +70,7 @@ class columns:
 
 class flags:
     USE_AUGMENTED = False
-    USE_GLOSS = True
+    USE_GLOSS = False
     GLOSS_SEP = ' [SEP] '
 
 
